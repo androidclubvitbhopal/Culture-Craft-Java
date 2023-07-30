@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CultureCraft-Java</string>
+    <string name="indian">Indian</string>
+    <string name="culture">Culture</string>
+    <string name="history">History</string>
+    <string name="dance">Dance</string>
+    <string name="food">Food</string>
+    <string name="places">Places</string>
+</resources>

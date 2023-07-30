@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="255dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/dim_15"
+    android:layout_marginTop="@dimen/dim_15"
+    app:cardUseCompatPadding="true">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/blurImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:radius="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img1" />
+
+    <TextView
+        android:id="@+id/cultureTextV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dance"
+        android:textSize="@dimen/font_size_65"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:fontFamily="@font/inria_sans_light"
+        android:layout_gravity="center"
+        />
+</FrameLayout>
+
+</androidx.cardview.widget.CardView>

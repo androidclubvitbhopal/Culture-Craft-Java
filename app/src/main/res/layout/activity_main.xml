@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="80dp"
+          android:orientation="horizontal"
+          android:background="@color/black">
+
+          <TextView
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:fontFamily="@font/inria_sans_light"
+              android:gravity="end|center"
+              android:paddingEnd="15dp"
+              android:text="@string/indian"
+              android:textColor="#D2691E"
+              android:textStyle="bold"
+              android:textSize="@dimen/font_size_45" />
+         <TextView
+             android:layout_width="0dp"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:text="@string/culture"
+             android:fontFamily="@font/inria_sans_light"
+             android:gravity="start|center"
+             android:textSize="@dimen/font_size_45"
+             android:textColor="#fff"
+             android:textStyle="bold"
+             android:paddingStart="15dp"/>
+      </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dim_20"
+        android:layout_marginEnd="@dimen/dim_20"
+        android:layout_marginTop="@dimen/dim_1"
+        android:layout_marginBottom="100dp"/>
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:cardCornerRadius="@dimen/dim_15"
+                app:cardUseCompatPadding="true">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.jgabrielfreitas.core.BlurImageView
+                        android:id="@+id/historyIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:radius="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img4" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/history"
+                        android:textSize="@dimen/font_size_65"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inria_sans_light"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:cardCornerRadius="@dimen/dim_15"
+                android:layout_marginTop="@dimen/dim_15"
+                app:cardUseCompatPadding="true">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.jgabrielfreitas.core.BlurImageView
+                        android:id="@+id/danceIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:radius="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/dance"
+                        android:textSize="@dimen/font_size_65"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inria_sans_light"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:cardCornerRadius="@dimen/dim_15"
+                android:layout_marginTop="@dimen/dim_15"
+                app:cardUseCompatPadding="true">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.jgabrielfreitas.core.BlurImageView
+                        android:id="@+id/foodIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:radius="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/food"
+                        android:textSize="@dimen/font_size_65"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inria_sans_light"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="255dp"
+                app:cardCornerRadius="@dimen/dim_15"
+                android:layout_marginBottom="100dp"
+                android:layout_marginTop="@dimen/dim_15"
+                app:cardUseCompatPadding="true">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.jgabrielfreitas.core.BlurImageView
+                        android:id="@+id/placesIM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:radius="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/places"
+                        android:textSize="@dimen/font_size_65"
+                        android:textColor="#fff"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/inria_sans_light"
+                        android:layout_gravity="center"
+                        />
+                </FrameLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        -->
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:padding="5dp"
+        android:elevation="2dp"
+        android:background="@drawable/bnv_background"
+
+        app:itemIconTint="@color/black"
+
+        app:itemTextColor="@color/white"
+        android:layout_gravity="bottom"
+        app:menu="@menu/menu"
+        app:itemIconSize="35dp"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+
+
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
